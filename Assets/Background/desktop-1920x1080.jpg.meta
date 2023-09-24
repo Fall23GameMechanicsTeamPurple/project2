@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      desktop-1920x1080_0: 4124311672465442163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
