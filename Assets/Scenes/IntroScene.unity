@@ -844,30 +844,30 @@ MonoBehaviour:
   m_text: 'Instructions:
 
 
-    Use wasd to move character, character will auto attack
-    when near enemy
+    Enemies will spawn at the top left corner, and you
+    have to defend the base from waves of attack!
 
 
-    From home base soliders will spawn with the maximum amount,
-    they will target the nearest enemy and attack it.
+    Use WASD to move the Hero.
+    It will auto attack when near enemy
 
 
-    Use P to place a tower
-    with left click to set the position, tower will attack nearest enemy in range
+    From home base soliders will spawn
+    with the maximum amount, they will target the nearest enemy and attack it.
 
 
-    After
-    each wave, you can spend point on upgrading either player, solider or tower.
+    Use
+    P to place a turret with left click to set the position. Turrets will attack
+    nearest enemy in range
 
 
-    In
-    the first wave, you have one initial point on all three skills, but after you
-    made your first choice, you will lose the two unchoosen  points, if you like,
-    you can add them later.
+    After each wave, you can spend points on upgrading
+    either the Hero, turret, or army.
 
 
-    There are two versions of this game, and you may
-    choose one to begin the game.
+    There are two versions of this game,
+    and you may choose one to begin the game. At any point in the game, you may press
+    ''esc'' to come back to this screen.
 
 '
   m_isRightToLeft: 0
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.6
+  m_fontSize: 31.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
