@@ -171,6 +171,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6946616685732183185}
+  - {fileID: 423520522321227506}
   - {fileID: 6465642585745078745}
   - {fileID: 2915274854565925219}
   - {fileID: 1814407065662856625}
@@ -422,6 +423,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6210664951753599248}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7566070006923722414}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -557,6 +570,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7566070006923722414}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6210664951753599248}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -879,6 +904,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!1 &6210664951753599248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423520522321227506}
+  - component: {fileID: 278858599948138601}
+  - component: {fileID: 5779668841009388090}
+  m_Layer: 0
+  m_Name: ScreenCover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &423520522321227506
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210664951753599248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6962613814188542764}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &278858599948138601
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210664951753599248}
+  m_CullTransparentMesh: 1
+--- !u!114 &5779668841009388090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210664951753599248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0.827451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7566070006923722414
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6465642585745078745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1107,16 +1207,24 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsTurretLevel","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsArmyLevel","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelDelta","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelCanvas","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelCanvas","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
+    - target: {fileID: 134810507753223502, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 134810507753223502, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: '_data._objectReferences.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800730971558295485}
     - target: {fileID: 236079953227740252, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_Name
       value: TreeTurret
       objectReference: {fileID: 0}
     - target: {fileID: 807688887213424749, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 807688887213424749, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1152,6 +1260,22 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 1828504745204360108}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1753666527787428531, guid: 9510208f196d4714d8d4dfe50d613f55, type: 3}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 3533747600113941612, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsPlayerLevel","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
@@ -1169,6 +1293,18 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 2800730971558295485}
+    - target: {fileID: 3998069961700228810, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998069961700228810, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998069961700228810, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4721585737276658355, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"TooltipDescription","value":{"$content":"Increase
@@ -1184,6 +1320,22 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 1828504745204360108}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5429531342854110306, guid: 7225761ba984a9e479808d218f476978, type: 3}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 6239977816494202605, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_text
       value: Turret Level
@@ -1302,16 +1454,24 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsTurretLevel","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsArmyLevel","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelDelta","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelCanvas","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelCanvas","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
+    - target: {fileID: 134810507753223502, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 134810507753223502, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: '_data._objectReferences.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800730971558295485}
     - target: {fileID: 236079953227740252, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_Name
       value: TreePlayer
       objectReference: {fileID: 0}
     - target: {fileID: 807688887213424749, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 807688887213424749, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1358,6 +1518,22 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 1828504745204360108}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1813907656735931696, guid: 3cc88ada233962b4491d0782784862f5, type: 3}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 3533747600113941612, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsPlayerLevel","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
@@ -1390,6 +1566,22 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 1828504745204360108}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5139647789837517475, guid: d027c7a85ac019e47bc15c886db28767, type: 3}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9056604
+      objectReference: {fileID: 0}
     - target: {fileID: 6239977816494202605, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_text
       value: Hero Level
@@ -1524,16 +1716,24 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsTurretLevel","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"IsArmyLevel","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelDelta","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelCanvas","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"LevelCanvas","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
+    - target: {fileID: 134810507753223502, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 134810507753223502, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: '_data._objectReferences.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800730971558295485}
     - target: {fileID: 236079953227740252, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_Name
       value: TreeArmy
       objectReference: {fileID: 0}
     - target: {fileID: 807688887213424749, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 807688887213424749, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1569,6 +1769,22 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 1828504745204360108}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3841815135890127401, guid: cd4e26e5976f1de4dbcdf4462d667e15, type: 3}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008673013951189606, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 3533747600113941612, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsPlayerLevel","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
@@ -1586,6 +1802,10 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 2800730971558295485}
+    - target: {fileID: 3998069961700228810, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9964243
+      objectReference: {fileID: 0}
     - target: {fileID: 4721585737276658355, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"TooltipDescription","value":{"$content":"Increase
@@ -1601,6 +1821,22 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[0]'
       value: 
       objectReference: {fileID: 1828504745204360108}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5988082825585189691, guid: 03e1feb77f80a4b4d955927e10d4dabb, type: 3}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.b
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.g
+      value: 0.90588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505120813374529444, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
+      propertyPath: m_Color.r
+      value: 0.90588236
+      objectReference: {fileID: 0}
     - target: {fileID: 6239977816494202605, guid: a4fa84771ecff514aaef5a7eeb0a3155, type: 3}
       propertyPath: m_text
       value: Army Level
