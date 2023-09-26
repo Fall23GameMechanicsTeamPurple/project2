@@ -6246,6 +6246,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 892013470078515531, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"moveSpeed","value":{"$content":4.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"attackCooldown","value":{"$content":0.7,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"attackDamage","value":{"$content":10.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"PlayerDamageDeltaK","value":{"$content":7.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"FirerateDeltaK","value":{"$content":0.25,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"MoveSpeedDeltaK","value":{"$content":6.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 5028621906191562941, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3102
@@ -6284,6 +6294,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5028621906191562941, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200343818930832118, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1055346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200343818930832118, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3950455
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200343818930832118, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.1055346
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200343818930832118, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200343818930832118, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6222770677961472769, guid: dfc58844d4c61ed4da62110df99cf004, type: 3}
@@ -8959,10 +8989,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8137908660751777699, guid: 3079f27847e5431479c406aac622eff7, type: 3}
       propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"EnemyPerWave","value":{"$content":[1,2,3,4,5],"$type":"System.Collections.Generic.List`1[[System.Int32,
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"EnemyPerWave","value":{"$content":[4,10,20,25,35,40],"$type":"System.Collections.Generic.List`1[[System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"EnemySpawnCD","value":{"$content":3.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"EnemySpawnCD","value":{"$content":1.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"EnemyPrefab","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
